@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family: Fraunces;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+p{
+    color:hsl(228, 12%, 48%);
+    font-family: montserrat;
+    font-weight: 500;
+}
+
+.details{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+}
+
+.perfume{
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;  
+    max-width: 37.5rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: .75rem;
+}
+
+.text{
+    background-color:hsl(0, 0%, 100%);
+    padding:1rem 1.8rem;
+    padding-bottom: 2rem;
+    width: 50%;
+}
+
+.desk{
+    width: 50%;
+    max-width: 18.75rem;    
+    height: 100%;
+}
+
+.mob{
+    display: none;
+}
+
+
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    padding:1rem 3rem;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    background: hsl(158, 58%, 24%);
+}
+
+.old{
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%);
+    padding-left: 1rem;
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.new{
+    color:hsl(158, 36%, 37%);
+    font-family: fraunces;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cart{
+    height:1rem;
+    width: auto;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    margin-top: 1rem;
+}
+    
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen  and (max-width:600px){
+    
+    *{
+        box-sizing: border-box;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        height: 100vh;
+        margin-bottom: 0;
+
+    }
+
+    .desk{
+        display: none;
+    }
+
+    
+
+    .mob{
+        display: block;
+        width: 100%;
+        height: 40%;
+        border-radius: 0.5rem 0.5rem 0 0;
+       
+    }
+    
+    body{
+        padding: 0rem;
+        width: 100%;
+    }
+
+
+    .text{
+        padding:2rem;
+        width: 100%;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .attribution{
+        width:100%;
+        margin:0;
+    }
+}
